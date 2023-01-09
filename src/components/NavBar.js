@@ -14,10 +14,12 @@ function NavBar() {
         <nav>
             <Link to="/">
           <span className="logo-container">
+
             <img src={logo} alt="logo"/>
             <h3>
               Banana Security
             </h3>
+
           </span>
             </Link>
 
@@ -31,7 +33,9 @@ function NavBar() {
 
 
                     </>
+
                     :
+
                     <>
 
                         <button type="button" onClick={() => navigate('/signin')}>Login</button>
