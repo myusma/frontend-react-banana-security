@@ -16,6 +16,7 @@ function App() {
     return (
         <>
             <NavBar/>
+
             <div className="content">
 
                 <Routes>
@@ -23,7 +24,6 @@ function App() {
                     <Route exact path="/" element={<Home/>}/>
                     <Route path="/profile" element={isAuth === true ? <Profile/> : <Navigate to="/"/>}/>
                     <Route exact path="/signin" element={<SignIn/>}/>
-
                     <Route exact path="/signup" element={<SignUp/>}/>
 
 

@@ -8,6 +8,8 @@ function NavBar() {
 
     const {isAuth, logout, user} = useContext(AuthContext);
 
+    console.log(user)
+
     return (
         <nav>
             <Link to="/">
@@ -24,7 +26,7 @@ function NavBar() {
                 {isAuth ?
 
                     <>
-                        {/*<span>{user}</span>*/}
+                        <span>{user}  </span>
                         <button type="button" onClick={logout}>Logout</button>
 
 
